@@ -146,6 +146,8 @@ def deep_think(deeps,now_stone_color,nowlist):
         save.append([i[:] for i in nowlist])
         max_list=[0,0,-10**8]
         make_cand(now_stone_color)
+        if cand==[]:
+            break
         for t in cand:
             x=t[0];y=t[1]
             stone=[i[:] for i in save[-1]]
